@@ -203,6 +203,7 @@ var serPage = template.Must(template.New("serPage").Parse(`
 			{{range .results}}
 			<tr>
 				<td>{{.UrlId}}</td>
+				<td><a href="{{.Url}}">source</a></td>
 				<td><a href="url?id={{.UrlId}}">{{.Title}}</a></td>
 			</tr>
 			{{end}}
