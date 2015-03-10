@@ -2,8 +2,8 @@ package main
 
 import (
 	"camlistore.org/pkg/syncutil"
-	"code.google.com/p/go.net/html"
-	"code.google.com/p/go.net/html/atom"
+	"golang.org/x/net/html"
+	"golang.org/x/net/html/atom"
 	"fmt"
 	"net/url"
 	"os"

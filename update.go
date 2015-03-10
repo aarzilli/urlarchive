@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"bytes"
-	"code.google.com/p/go.net/html"
+	"golang.org/x/net/html"
 	"fmt"
 	"github.com/aarzilli/sandblast"
 	"os"
