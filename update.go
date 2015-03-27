@@ -3,9 +3,9 @@ package main
 import (
 	"bufio"
 	"bytes"
-	"golang.org/x/net/html"
 	"fmt"
 	"github.com/aarzilli/sandblast"
+	"golang.org/x/net/html"
 	"os"
 	"strconv"
 	"strings"

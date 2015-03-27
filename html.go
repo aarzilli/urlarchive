@@ -2,8 +2,8 @@ package main
 
 import (
 	"bytes"
-	"golang.org/x/net/html"
 	"github.com/aarzilli/sandblast"
+	"golang.org/x/net/html"
 	"io"
 	"strings"
 )

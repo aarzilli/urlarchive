@@ -12,6 +12,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"strconv"
 	"sync"
 	"time"
 )
@@ -342,6 +343,7 @@ func (u *Url) Remove() {
 
 type Result struct {
 	UrlId string
+	Url   string
 	Title string
 }
 
@@ -355,6 +357,15 @@ func search(q string) []Result {
 		var a Result
 		must(stmt.Scan(&a.UrlId, &a.Title))
 		r = append(r, a)
+	}
+
+	for i := range r {
+		id, _ := strconv.Atoi(r[i].UrlId)
+		u, ok := getUrl(id)
+		if ok {
+			r[i].Url = u.Url
+		}
+		//TODO
 	}
 	return r
 }

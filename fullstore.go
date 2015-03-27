@@ -2,9 +2,9 @@ package main
 
 import (
 	"camlistore.org/pkg/syncutil"
+	"fmt"
 	"golang.org/x/net/html"
 	"golang.org/x/net/html/atom"
-	"fmt"
 	"net/url"
 	"os"
 	"strings"
